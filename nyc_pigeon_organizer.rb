@@ -1,13 +1,7 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  
 new_hash={}
-inner_hash={}
-data.each_key{|key|
-inner_hash[key]=[]
-}
-
 data.each_key{|key|
   data[key].each_key{ |key2|
     data[key][key2].each{ |name2|
@@ -25,5 +19,4 @@ data.each_key{|key|
   }
 }
 new_hash
-
 end
